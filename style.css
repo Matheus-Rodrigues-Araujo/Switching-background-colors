@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family:fantasy */
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+  gap: 10em;
+  color: black;
+  background-color: white;
+}
+
+body > h1{
+  color: black;
+  letter-spacing:.2em;
+}
+
+/* This class will be activated when the button.active get a click */
+.background-off{
+  background-color: rgb(44, 39, 39);
+  color: orangered;
+}
+.background-off h1{
+  color: rgb(53, 226, 0);
+}
+
+/* ====================================================================================================== */
+/* BUTTON STYLE ========================================================================================= */
+/* Style of the button with the class = ".active" */
+.active{
+  cursor: pointer;
+  width: 12em;
+  height: 8em;
+  border: none;
+  border-radius: 1em;
+  background-color: crimson;
+  color: white;
+  font-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+.active:hover{
+  background-color: rgb(184, 9, 140);
+  color: rgb(255, 255, 255);
+}
+
+/* This class will make the button.active disappear with the toggle method*/
+.light-off{
+  display: none;
+}
+/* ================================================================================================ */
+
+/* This is the class of the div element */
+.window{
+  display: none;
+  background-color: rgb(12, 214, 181);
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+  font-size: 2.5em;
+  font-weight: 700;
+  border: none;
+  border-radius: 1em;
+}
+
+/* when the div.window element's class list has this class, the display will be in block*/
+.window-on{
+  display: block;
+}
